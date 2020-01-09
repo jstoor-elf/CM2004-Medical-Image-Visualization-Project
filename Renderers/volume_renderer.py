@@ -224,10 +224,6 @@ class SurfaceActor:
         smooth.NormalizeCoordinatesOn()
         smooth.Update()
 
-        # print(smooth.GetOutput().GetPoints())
-        #array->GetTuple(desiredpoint, tuple);
-        #delete[] tuple;
-
 
         # Set lookup table
         self.color_transfer = vtk.vtkDiscretizableColorTransferFunction()
@@ -244,22 +240,6 @@ class SurfaceActor:
         self.surface_mapper = vtk.vtkPolyDataMapper()
         self.surface_mapper.SetLookupTable(self.color_transfer)
         self.surface_mapper.SetInputConnection(smooth.GetOutputPort())
-
-
-        # self.verts = vtk_to_numpy(smooth.GetOutput().GetPoints().GetData())
-        modelPolyData = self.surface_mapper.GetInput()
-        numPoints = modelPolyData.GetNumberOfPoints()
-
-        locator = vtk.vtkPointLocator()
-        locator.SetDataSet(modelPolyData)
-        locator.BuildLocator()
-
-        for ptId in range(numPoints): # (ptId=0; ptId<numPoints; ptId++)
-            point = modelPolyData.GetPoint(ptId)
-            id = locator.FindClosestPoint(point)
-            print(point)
-            print(modelPolyData.GetPointData().GetScalars().GetTuple(id))
-
 
 
         # Create the actor
