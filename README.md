@@ -1,7 +1,11 @@
 # A Visualization Toolkit for Improving Deep Learning-Based Segmentation
 
-<img width="400" alt="VisApplication2" src="https://user-images.githubusercontent.com/55019110/100361586-9f8bc980-2ffa-11eb-8c0c-d694e4fb0c0d.png">
-<img width="400" alt="VisApplication1" src="https://user-images.githubusercontent.com/55019110/100361566-9864bb80-2ffa-11eb-9943-57a3637456c9.png">
+<div class="nav3" style="height:705px;">
+    <img width="400" alt="VisApplication2" src="https://user-images.githubusercontent.com/55019110/100361586-9f8bc980-2ffa-11eb-8c0c-d694e4fb0c0d.png">
+    <img width="400" alt="VisApplication1" src="https://user-images.githubusercontent.com/55019110/100361566-9864bb80-2ffa-11eb-9943-57a3637456c9.png">
+
+</div>
+
 
 #### This is the directories in the file system that the application is based around, all image files have been excluded
 
